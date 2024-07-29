@@ -9,6 +9,11 @@ public class ProblemDetails : IResponse
 {
 
 	/// <summary>
+	/// The type of response being represented.
+	/// </summary>
+	public ResponseType ResponseType { get; set; } = ResponseType.ProblemDetails;
+
+	/// <summary>
 	/// A URI reference that identifies the problem type. This specification encourages that, when dereferenced, it provide human-readable documentation for the problem type.
 	/// </summary>
 	public string Type { get; set; } = null!;

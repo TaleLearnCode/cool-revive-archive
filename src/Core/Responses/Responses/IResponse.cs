@@ -9,6 +9,11 @@ public interface IResponse
 {
 
 	/// <summary>
+	/// The type of response being represented.
+	/// </summary>
+	ResponseType ResponseType { get; set; }
+
+	/// <summary>
 	/// A URI reference that identifies the response type. This specification encourages that, when dereferenced, it provide human-readable documentation for the response type.
 	/// </summary>
 	string Type { get; set; }

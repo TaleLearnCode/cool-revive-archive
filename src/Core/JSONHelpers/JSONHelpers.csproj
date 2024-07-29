@@ -7,8 +7,4 @@
     <RootNamespace>Remanufacturing</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\JSONHelpers\JSONHelpers.csproj" />
-  </ItemGroup>
-
 </Project>

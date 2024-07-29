@@ -3,7 +3,7 @@
 # #############################################################################
 
 resource "azurerm_servicebus_topic" "OrderNextCore" {
-  name                      = "${module.service_bus_namespace.name.abbreviation}-CoolRevive-OrderNextCore${var.resource_name_suffix}-${var.azure_environment}-${module.azure_regions.region.region_short}"
+  name                      = "${module.service_bus_topic.name.abbreviation}-CoolRevive-OrderNextCore${var.resource_name_suffix}-${var.azure_environment}-${module.azure_regions.region.region_short}"
   namespace_id              = data.azurerm_servicebus_namespace.remanufacturing.id
   support_ordering          = true
 }

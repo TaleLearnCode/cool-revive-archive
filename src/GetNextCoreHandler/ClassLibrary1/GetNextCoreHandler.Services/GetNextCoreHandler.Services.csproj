@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Remanufacturing.OrderNextCore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\JSONHelpers\JSONHelpers.csproj" />
+    <ProjectReference Include="..\..\..\Core\Messages\Messages.csproj" />
+    <ProjectReference Include="..\..\..\Core\Responses\Responses.csproj" />
+    <ProjectReference Include="..\..\..\Core\ServiceBusHelpers\ServiceBusHelpers.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -9,6 +9,11 @@ public class StandardResponse : IResponse
 {
 
 	/// <summary>
+	/// The type of response being represented.
+	/// </summary>
+	public ResponseType ResponseType { get; set; } = ResponseType.StandardResponse;
+
+	/// <summary>
 	/// A URI reference that identifies the response type. This specification encourages that, when dereferenced, it provide human-readable documentation for the response type.
 	/// </summary>
 	public string Type { get; set; } = null!;
